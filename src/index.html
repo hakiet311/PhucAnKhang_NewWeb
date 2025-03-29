@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Phúc An Khang</title>
+  </head>
+  <body>
+    <header
+      style="
+        background: linear-gradient(
+            90deg,
+            rgba(37, 102, 47, 0.6),
+            rgba(25, 105, 25, 0.6)
+          ),
+          url(/IMG/signature/TUAN1557\ -\ Copy-min.jfif);
+        background-position: center;
+        background-size: cover;
+      "
+      class="h-[100vh]"
+    >
+      <nav
+        class="h-16 container_p bg-primary flex flex-row justify-between items-center"
+        style="box-shadow: 0 0 24px rgba(17, 16, 16, 0.347)"
+      >
+        <button class="btn_menu lg:hidden">
+          <img src="/Icon/menu-outline.svg" alt="menu" class="w-12 lg:hidden" />
+        </button>
+        <a
+          class="absolute top-0 left-1/2 -translate-x-1/2 lg:block lg:static"
+          href="#"
+          ><img class="w-16" src="/IMG/Logo/PAK.png" alt="logo"
+        /></a>
+        <ul
+          class="fixed flex flex-col justify-center items-center gap-20 top-0 left-0 p-12 w-1/2 h-screen backdrop-blur-sm bg-sub scale-x-0 z-50 font-bold text-green-900 origin-left transition-all duration-200 lg:static lg:scale-x-100 lg:flex lg:flex-row lg:gap-5 lg:backdrop-blur-none lg:w-auto lg:bg-transparent lg:p-0 lg:h-auto lg:text-black lg:font-thin"
+        >
+          <button
+            class="btn_close_menu absolute px-2 rounded-full top-2 right-2 bg-primary text-green-900 lg:hidden"
+          >
+            x
+          </button>
+          <li>
+            <a
+              class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
+              href="#!"
+              >Về chúng tôi</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
+              href="#!"
+              >Chứng nhận</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
+              href="#!"
+              >Bộ sưu tập</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
+              href="#!"
+              >Khách hàng</a
+            >
+          </li>
+          <li>
+            <a
+              class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
+              href="#!"
+              >Sản phẩm</a
+            >
+          </li>
+        </ul>
+        <a
+          class="text-md md:text-lg lg:text-xl bg-green-900 text-white px-6 py-3 rounded-lg ml-auto"
+          href="#!"
+          >Liên hệ</a
+        >
+      </nav>
+      <section
+        class="absolute w-[300px] md:w-[600px] top-1/3 left-1/2 -translate-x-1/2 text-center text-sub space-y-3 z-10"
+      >
+        <h1 class="text-3xl font-extrabold uppercase lg:text-6xl">
+          Phúc An Khang
+        </h1>
+        <p class="text-xl uppercase">Mang bình an</p>
+        <p class="text-lg italic">
+          Trung thu thượng hạng dành cho đối tác và doanh nghiệp của bạn
+        </p>
+        <a
+          class="px-4 py-3 bg-green-900 inline-block font-bold text-xl rounded-2xl hover:-translate-y-1 active:-translate-y-0.5 transition-all duration-300"
+          href="#!"
+          >Khám phá ngay</a
+        >
+      </section>
+    </header>
+    <main>
+      <!-- Shopping -->
+      <section class="section section_product container_p py-16">
+        <h1 class="text_header mb-5">Sản phẩm của chúng tôi</h1>
+        <!--  -->
+        <div class="grid grid-cols-12 justify-center items-center gap-3">
+          <!--  -->
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929150104_4daba65cee75d01701e06b15510adb4e.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Than tre sữa dừa Nhật Bản
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 95k (bánh thường), 140k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929150172_a7a28e76ec99536aa4e781d81e4f449f.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Rose Cake Cheese Fruit
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 115k (bánh thường), 160k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929150649_b3778e78ba4887ba7c01682eed6abb10.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Hồng Cúc Long Nhãn Hạt Sen
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 140k (bánh thường), 185k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929150932_b577201bea9ca7ea1ef42eae72085cbf.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Matcha Ngọc Bảo Hạnh Nhân
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 105k (bánh thường), 150k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929466245_2b0b65224107ec90964827242b1ea789.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Gà Quay Thập Vị Sốt Sambal
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 125k (bánh thường), 170k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929410205_13f9befa1237a44c061a21473f705340.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Nhất Yến Gà Quay Sốt HongKong
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 145k (bánh thường), 190k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929730892_49eb8c224e8d6eff772e6127dc7c248d.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Matcha Olong
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 110k (bánh thường), 155k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929466245_2b0b65224107ec90964827242b1ea789.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Gà Quay đông trùng hạ thảo
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 155k (bánh thường), 200k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929410205_13f9befa1237a44c061a21473f705340.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Đậu Xanh Lục Bảo
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 90k (bánh thường), 135k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/z6430929410205_13f9befa1237a44c061a21473f705340.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Hạt Sen Cốm sữa
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 95k (bánh thường), 140k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/mocha.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Mocha Pudding
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 95k (bánh thường), 140k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+          >
+            <img
+              class="h-[300px] w-[100%] object-cover object-bottom"
+              src="/IMG/BanhDon/baongu.jpg"
+              alt=""
+            />
+            <!--  -->
+            <div class="px-3 py-6 flex flex-col gap-2 text-lg">
+              <h1 class="text-lg uppercase font-bold text-center">
+                Bào Ngư Sốt Rượu Vang
+              </h1>
+              <p class="font-bold">- Trọng lượng: 150g</p>
+              <p class="font-bold">- Giá: 165k (bánh thường), 210k (bánh 3D)</p>
+              <div class="text-center">
+                <a
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  href="#!"
+                  >Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section
+        class="section section_about container_p py-16 lg:p-24 bg-sub2 text-green-900"
+      >
+        <h1 class="text-center uppercase text-2xl font-bold lg:text-3xl">
+          Về chúng tôi
+        </h1>
+        <p class="text-md md:text-lg">
+          Công ty TNHH Khang Dũng Thư mang thương hiệu Phúc An Khang tự hào là
+          thương hiệu bánh trung thu cao cấp, chuyên cung cấp các sản phẩm chất
+          lượng dành riêng cho doanh nghiệp. Với hơn 10 năm kinh nghiệm trong
+          ngành, chúng tôi luôn mang đến những chiếc bánh tinh tế, kết hợp giữa
+          truyền thống và hiện đại, giúp quý doanh nghiệp gửi gắm thông điệp tri
+          ân đến khách hàng, đối tác và nhân viên.
+        </p>
+        <div class="mt-6">
+          <div class="columns-1 space-y-4 md:columns-2">
+            <div>
+              <div class="mb-6">
+                <h1
+                  class="mt-6 text-2xl uppercase font-bold text-center relative before:absolute before:w-1/3 before:h-2 before:rounded-full before:content-[''] before:bg-primary pt-3 before:top-0 before:left-1/2 before:-translate-x-1/2 lg:text-3xl"
+                >
+                  Giá trị cốt lõi
+                </h1>
+                <ul class="text-md md:text-lg text-center mt-2">
+                  <li>Chất lượng sản phẩm.</li>
+                  <li>Sự tinh tế về bao bì mẫu mã.</li>
+                  <li>Giá trị văn hoá truyền thống.</li>
+                </ul>
+              </div>
+              <div
+                class="bg-sub2 h-[auto] p-8 rounded-xl shadow-lg shadow-slate-900/30"
+              >
+                <h1 class="text-center text-xl font-bold uppercase">
+                  Lý do chọn PAK là đối tác
+                </h1>
+                <ul class="list-disc">
+                  <li>Chứng nhận HACCP – Đạt tiêu chuẩn an toàn thực phẩm</li>
+                  <li>Thiết kế sang trọng – Tạo dấu ấn khác biệt</li>
+                  <li>Nguyên liệu cao cấp – Công thức độc quyền</li>
+                  <li>
+                    Dịch vụ thiết kế set quà Trung Thu theo yêu cầu của doanh
+                    nghiệp
+                  </li>
+                  <li>
+                    Bảng giá gia công (OEM) ưu đãi độc quyền dành tặng cho doanh
+                    nghiệp
+                  </li>
+                  <li>
+                    Chính sách ưu đãi cho đại lý theo từng bậc lên đến 35%
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <figure>
+              <img
+                class="rounded-lg md:h-[500px] md:w-12/12 md:object-cover md:object-bottom"
+                src="/IMG/BanhDon/z6430929807003_70ca406c0ec0f12133f581350b8e5a5d.jpg"
+                alt="trungthu"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section
+        class="section section_manufactor container_p py-16 bg-sub gap-3"
+      >
+        <div class="flex flex-col gap-4 mb-6">
+          <div>
+            <h1 class="font-bold text-2xl text-center">
+              DÂY CHUYỀN SẢN XUẤT HIỆN ĐẠI
+            </h1>
+            <p>
+              Chúng tôi sở hữu hệ thống dây chuyền sản xuất hiện đại, kết hợp
+              giữa công nghệ tiên tiến và kỹ thuật làm bánh truyền thống. Mọi
+              quy trình đều được kiểm soát nghiêm ngặt từ khâu chọn nguyên liệu,
+              chế biến, đóng gói cho đến khâu bảo quản, nhằm đảm bảo sản phẩm
+              luôn đạt tiêu chuẩn chất lượng cao nhất.
+            </p>
+          </div>
+          <div>
+            <h1 class="text_header">Năng lực sản xuất</h1>
+            <ul class="text-center">
+              <li>Từ 1.000 bánh 2D /1 ngày.</li>
+              <li>Từ 500 bánh 3D/ 1 ngày.</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="*:rounded-2xl flex flex-col gap-3 md:flex-row md:flex-wrap md:*:basis-[300px] md:*:grow"
+        >
+          <img
+            class="md:h-1/2 md:w-1/6 object-cover"
+            src="/IMG/manufactor/IMG_1144.JPG"
+            alt=""
+          />
+          <img
+            class="md:h-1/2 md:w-1/6 object-cover"
+            src="/IMG/manufactor/IMG_1160.JPG"
+            alt=""
+          />
+          <img
+            class="md:h-1/2 md:w-1/6 object-cover"
+            src="/IMG/manufactor/IMG_4570.jpg"
+            alt=""
+          />
+          <img
+            class="md:h-1/2 md:w-1/6 object-cover"
+            src="/IMG/manufactor/IMG_5238.jpg"
+            alt=""
+          />
+        </div>
+      </section> -->
+
+      <section class="section section_certificate container_p py-16 bg-sub2">
+        <div class="mb-6 flex flex-col gap-3">
+          <h1 class="text_header">Đạt tiêu chuẩn an toàn thực phẩm</h1>
+          <ul
+            class="p-8 bg-sub2 inline-block rounded-2xl text-lg shadow-lg shadow-slate-800/20 md:flex md:flex-row md:gap-6 text-black md:text-xl list-disc"
+          >
+            <li>VSATTP đạt chuẩn chứng chỉ quốc tế HACCP.</li>
+            <li>Xuất xứ rõ ràng, xuất VAT.</li>
+            <li>Cơ sở vận hành đúng quy trình VSATTP theo quy định.</li>
+            <li>Có giấy công bố sản phẩm do BQLVSATTP chứng nhận.</li>
+            <li>Sản xuất theo quy trình bán công nghiệp.</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-12 gap-4">
+          <img
+            class="col-span-12 md:col-span-6"
+            src="/IMG/Certification/1.png"
+            alt=""
+          />
+          <img
+            class="col-span-12 md:col-span-6"
+            src="/IMG/Certification/2.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- <section class="section section_logocus container_p py-16">
+        <div>
+          <h1 class="text_header">
+            Chúng tôi tự hào là đơn vị uy tín, chất lượng, đã cộng tác với hơn
+            100 doanh nghiệp trong 10 năm qua.
+          </h1>
+        </div>
+        <div class="grid grid-cols-12 justify-center items-center">
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/bbi.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/BUYMED.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/casumina-logo-A667AC9144-seeklogo.com.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/charme.jpg"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/comi.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/dlg.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/Eximbank (1).png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/finfin.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/GMARK.jpg"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/images (4).png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/images.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/laco.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/Logo Doha.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/logo-tra-viet-1024x1024.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/logoAQ.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/matbao.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/matvietnga.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/milano.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/PMAX.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/qua tet viet.png"
+            alt=""
+          />
+          <img
+            class="max-w-[80px] col-span-6 md:col-span-3 lg:col-span-2 block m-auto self-center"
+            src="/IMG/Logo-cus/richgroup.png"
+            alt=""
+          />
+        </div>
+      </section> -->
+
+      <!-- <section
+        class="section section_album container_p py-16 bg-sub2 grid grid-cols-12 gap-6 md:*:self-center md:*:m-auto"
+      >
+        <div class="col-span-12 md:col-span-5">
+          <h1 class="text_header text-green-900">
+            Nhìn lại bộ sưu tập dân gian truyền thống 2024
+          </h1>
+          <p class="text-green-900 text-lg md:text-xl">
+            Lấy cảm hứng từ vẻ đẹp mộc mạc và tinh tế của nghệ thuật dân gian,
+            bộ sưu tập bánh trung thu này mang đến sự kết hợp hài hòa giữa
+            truyền thống và hiện đại. Từng hộp bánh được thiết kế với họa tiết
+            hoa sen thanh tao, chim hạc và những đường nét thủ công tinh xảo,
+            gợi nhớ đến nét đẹp văn hóa Việt Nam. Màu sắc chủ đạo là tông vàng
+            nhạt, xanh lá và hồng sen, tượng trưng cho sự an nhiên, may mắn và
+            thịnh vượng.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-7">
+          <div
+            class="grid grid-cols-12 gap-3 justify-center items-center *:self-center *:mx-auto *:rounded-xl"
+          >
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/aad.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/addư.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/daa.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/dfff.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/ew.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/maytre.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/maytre1.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/maytre2.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/feo.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/3D/z5675181141577_f4ef092c6c972dbac0704d2243b237ac.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/fea.jpg"
+              alt=""
+            />
+            <img
+              class="col-span-12 md:col-span-6 lg:col-span-4"
+              src="/IMG/Box/giay1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section
+        class="section container_p py-16 grid grid-cols-12 gap-4 justify-center items-center md:*:self-center md:*:m-auto"
+      >
+        <div class="col-span-12 md:col-span-5">
+          <h1 class="text_header">TINH HOA HỘI TỤ 2024</h1>
+          <p class="md:text-xl">
+            Set bánh trung thu cao cấp thượng hạng được thiết kế sang trọng với
+            hộp quà tinh tế lấy cảm hứng từ thiên nhiên nhiệt đới, điểm xuyết
+            hoa văn chim công và cây lá rực rỡ. Với tay cầm kim loại ánh vàng và
+            chi tiết tua rua độc đáo, sản phẩm không chỉ là món quà mà còn là
+            biểu tượng của sự đẳng cấp và phong cách. Bên trong là những chiếc
+            bánh trung thu được chế biến từ nguyên liệu tuyển chọn, mang đến
+            hương vị truyền thống kết hợp với sự sáng tạo hiện đại, hứa hẹn làm
+            hài lòng cả những khách hàng khó tính nhất.
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-7">
+          <div
+            class="grid grid-cols-12 justify-center items-center gap-3 md:gap-0 *:rounded-xl *:self-center *:m-auto"
+          >
+            <img
+              class="object-cover col-span-12 md:col-span-6 md:max-w-[100%] md:h-[90%]"
+              src="/IMG/Box/luxury.jpg"
+              alt=""
+            />
+            <img
+              class="object-cover col-span-12 md:col-span-6 md:max-w-[100%] md:h-[90%]"
+              src="/IMG/Box/1I0L88O0V_C4SU60.jpg"
+              alt=""
+            />
+            <img
+              class="object-cover col-span-12 md:col-span-6 md:max-w-[100%] md:h-[90%]"
+              src="/IMG/Box/hero.jpg"
+              alt=""
+            />
+            <img
+              class="object-cover col-span-12 md:col-span-6 md:max-w-[100%] md:h-[90%]"
+              src="/IMG/signature/oea.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!--  -->
+    <script src="script.js"></script>
+  </body>
+</html>

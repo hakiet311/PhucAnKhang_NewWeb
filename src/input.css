@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #9fc59c;
+  --color-sub: #c4d8b3;
+  --color-sub1: #e2ecc7;
+  --color-sub2: #f8fde6;
+
+  --color-gradient1: rbg(159, 197, 156, 0.8);
+  --color-gradient2: rbg(196, 216, 179, 0.8);
+}
+
+@layer base {
+  html {
+    font-family: "Merriweather";
+  }
+
+  .container_p {
+    @apply px-2 sm:px-6 md:px-8 lg:px-12;
+  }
+
+  .text_header {
+    @apply font-bold text-2xl text-center uppercase;
+  }
+}
