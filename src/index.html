@@ -18,7 +18,7 @@
       class="pop_up_container h-screen w-12/12 backdrop-blur-[3px] z-60 fixed top-0 left-0 flex justify-center items-center scale-100 transition-all duration-200 hide_popUp"
     >
       <div
-        class="w-[90%] h-auto bg-slate-100 rounded-2xl fixed p-8 flex flex-col gap-3"
+        class="w-[90%] h-auto bg-white rounded-2xl fixed p-8 flex flex-col gap-3"
       >
         <h1 class="text-lg uppercase font-bold text-center text-green-900">
           Cảm ơn quý doanh nghiệp đã tin tưởng lựa chọn sản phẩm và dịch vụ tại
@@ -89,35 +89,35 @@
           <li>
             <a
               class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
-              href="#!"
+              href="#about"
               >Về chúng tôi</a
             >
           </li>
           <li>
             <a
               class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
-              href="#!"
+              href="#certificate"
               >Chứng nhận</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
               href="#!"
               >Bộ sưu tập</a
             >
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <a
               class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
               href="#!"
               >Khách hàng</a
             >
-          </li>
+          </li> -->
           <li>
             <a
               class="md:text-lg lg:text-xl relative before:absolute before:content-[''] before:w-1/2 before:h-px before:bg-green-900 before:transition-all before:duration-300 before:bottom-0 before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:origin-right hover:text-green-900 transition-all"
-              href="#!"
+              href="#product"
               >Sản phẩm</a
             >
           </li>
@@ -147,7 +147,7 @@
     </header>
     <main>
       <!-- Shopping -->
-      <section class="section section_product container_p py-16">
+      <section class="section section_product container_p py-24" id="product">
         <h1 class="text_header mb-5">Sản phẩm của chúng tôi</h1>
         <!--  -->
         <div class="grid grid-cols-12 justify-center items-center gap-3">
@@ -457,7 +457,8 @@
       <!--  -->
 
       <section
-        class="section section_about container_p py-16 lg:p-24 bg-sub2 text-green-900"
+        class="section section_about container_p py-24 lg:p-24 bg-sub2 text-green-900"
+        id="about"
       >
         <h1 class="text-center uppercase text-2xl font-bold lg:text-3xl">
           Về chúng tôi
@@ -570,7 +571,10 @@
         </div>
       </section> -->
 
-      <section class="section section_certificate container_p py-16 bg-sub2">
+      <section
+        class="section section_certificate container_p py-24 bg-sub2"
+        id="certificate"
+      >
         <div class="mb-6 flex flex-col gap-3">
           <h1 class="text_header">Đạt tiêu chuẩn an toàn thực phẩm</h1>
           <ul
@@ -842,6 +846,34 @@
         </div>
       </section> -->
     </main>
+
+    <footer class="container_p bg-primary py-8">
+      <div
+        class="flex flex-row justify-between items-center flex-wrap *:basis-[300px] *:grow gap-y-5 *:self-center"
+      >
+        <div class="text-center">
+          <a href="#"
+            ><img class="w-16 block m-auto" src="/IMG/Logo/PAK.png" alt="logo"
+          /></a>
+          <p>Công ty TNHH Khang Dũng Thư</p>
+          <p>MST:0312143469</p>
+          <p>Địa chỉ: 43A Nguyễn Ngọc Nhựt, Tân Quý, Tân Phú, TP.HCM</p>
+        </div>
+        <div class="flex justify-center items-center gap-4">
+          <a href="tel:0937270889" target="_blank"
+            ><img class="w-8" src="/IMG/Contact/phone-6015.svg" alt="phone"
+          /></a>
+          <a href="https://zalo.me/0937270889" target="_blank"
+            ><img class="w-8" src="/IMG/Contact/zalo.svg" alt="phone"
+          /></a>
+          <a
+            href="https://www.facebook.com/PhucAnKhangGift88/?locale=vi_VN"
+            target="_blank"
+            ><img class="w-8" src="/IMG/Contact/facebook-5221.svg" alt="phone"
+          /></a>
+        </div>
+      </div>
+    </footer>
     <!--  -->
     <script src="script.js"></script>
   </body>

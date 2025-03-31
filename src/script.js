@@ -7,6 +7,7 @@ const popUp = document.querySelector(".pop_up_container");
 const btnClosePopUp = document.querySelector(".btn-close");
 const sections = document.querySelectorAll(".section");
 const navigationBar = document.querySelector("nav");
+const links = document.querySelectorAll("li");
 
 btnMenu.addEventListener("click", () => {
   nav.classList.remove("scale-x-0");
@@ -46,4 +47,14 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+//
+links.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    e.preventDefault();
+    const getHref = e.target.getAttribute("href");
+    document.querySelector(getHref).scrollIntoView({ behavior: "smooth" });
+    nav.classList.add("scale-x-0");
+  });
 });
