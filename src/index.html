@@ -13,6 +13,48 @@
     <title>Phúc An Khang</title>
   </head>
   <body>
+    <!-- POP UP -->
+    <section
+      class="pop_up_container h-screen w-12/12 backdrop-blur-[3px] z-60 fixed top-0 left-0 flex justify-center items-center scale-100 transition-all duration-200 hide_popUp"
+    >
+      <div
+        class="w-[90%] h-auto bg-slate-100 rounded-2xl fixed p-8 flex flex-col gap-3"
+      >
+        <h1 class="text-lg uppercase font-bold text-center text-green-900">
+          Cảm ơn quý doanh nghiệp đã tin tưởng lựa chọn sản phẩm và dịch vụ tại
+          Phúc An Khang
+        </h1>
+        <p>
+          Ưu Đãi Đặc Biệt Khi Đặt Hàng Sớm Dành Tặng Cho Doanh Nghiệp
+          <br />✔ Chiết khấu cao cho đơn hàng lớn <br />
+          ✔ Miễn phí thiết kế bao bì theo yêu cầu <br />
+          ✔ Hỗ trợ giao hàng tận nơi toàn quốc <br />
+          ✔ Bảng giá OEM ưu đãi độc quyền dành tặng cho doanh nghiệp <br />
+          ✔ Dịch vụ thiết kế set quà Trung Thu theo yêu cầu của doanh nghiệp
+        </p>
+        <h1 class="text-lg uppercase font-bold text-center text-green-900">
+          Liên hệ ngay bên dưới
+        </h1>
+        <div class="flex justify-center items-center gap-4">
+          <a href="tel:0937270889" target="_blank"
+            ><img class="w-8" src="/IMG/Contact/phone-6015.svg" alt="phone"
+          /></a>
+          <a href="https://zalo.me/0937270889" target="_blank"
+            ><img class="w-8" src="/IMG/Contact/zalo.svg" alt="phone"
+          /></a>
+          <a
+            href="https://www.facebook.com/PhucAnKhangGift88/?locale=vi_VN"
+            target="_blank"
+            ><img class="w-8" src="/IMG/Contact/facebook-5221.svg" alt="phone"
+          /></a>
+        </div>
+        <button class="btn-close w-8 absolute top-2 right-2 cursor-pointer">
+          <img src="/Icon/close-circle.svg" alt="close" />
+        </button>
+      </div>
+    </section>
+
+    <!--  -->
     <header
       style="
         background: linear-gradient(
@@ -27,7 +69,7 @@
       class="h-[100vh]"
     >
       <nav
-        class="h-16 container_p bg-primary flex flex-row justify-between items-center"
+        class="h-16 container_p bg-primary flex flex-row justify-between items-center z-40"
         style="box-shadow: 0 0 24px rgba(17, 16, 16, 0.347)"
       >
         <button class="btn_menu lg:hidden">
@@ -41,10 +83,8 @@
         <ul
           class="fixed flex flex-col justify-center items-center gap-20 top-0 left-0 p-12 w-1/2 h-screen backdrop-blur-sm bg-sub scale-x-0 z-50 font-bold text-green-900 origin-left transition-all duration-200 lg:static lg:scale-x-100 lg:flex lg:flex-row lg:gap-5 lg:backdrop-blur-none lg:w-auto lg:bg-transparent lg:p-0 lg:h-auto lg:text-black lg:font-thin"
         >
-          <button
-            class="btn_close_menu absolute px-2 rounded-full top-2 right-2 bg-primary text-green-900 lg:hidden"
-          >
-            x
+          <button class="btn_close_menu absolute top-2 right-2 w-8 lg:hidden">
+            <img src="/Icon/close-circle.svg" alt="" />
           </button>
           <li>
             <a
@@ -83,7 +123,7 @@
           </li>
         </ul>
         <a
-          class="text-md md:text-lg lg:text-xl bg-green-900 text-white px-6 py-3 rounded-lg ml-auto"
+          class="btn_lienhe text-md md:text-lg lg:text-xl bg-green-900 text-white px-6 py-3 rounded-lg ml-auto"
           href="#!"
           >Liên hệ</a
         >
@@ -99,7 +139,7 @@
           Trung thu thượng hạng dành cho đối tác và doanh nghiệp của bạn
         </p>
         <a
-          class="px-4 py-3 bg-green-900 inline-block font-bold text-xl rounded-2xl hover:-translate-y-1 active:-translate-y-0.5 transition-all duration-300"
+          class="btn_explore px-4 py-3 bg-green-900 inline-block font-bold text-xl rounded-2xl hover:-translate-y-1 active:-translate-y-0.5 transition-all duration-300"
           href="#!"
           >Khám phá ngay</a
         >
@@ -129,7 +169,7 @@
               <p class="font-bold">- Giá: 95k (bánh thường), 140k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -154,7 +194,7 @@
               <p class="font-bold">- Giá: 115k (bánh thường), 160k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -179,7 +219,7 @@
               <p class="font-bold">- Giá: 140k (bánh thường), 185k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -204,7 +244,7 @@
               <p class="font-bold">- Giá: 105k (bánh thường), 150k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -229,7 +269,7 @@
               <p class="font-bold">- Giá: 125k (bánh thường), 170k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -254,7 +294,7 @@
               <p class="font-bold">- Giá: 145k (bánh thường), 190k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -279,7 +319,7 @@
               <p class="font-bold">- Giá: 110k (bánh thường), 155k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -304,7 +344,7 @@
               <p class="font-bold">- Giá: 155k (bánh thường), 200k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -329,7 +369,7 @@
               <p class="font-bold">- Giá: 90k (bánh thường), 135k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -354,7 +394,7 @@
               <p class="font-bold">- Giá: 95k (bánh thường), 140k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -379,7 +419,7 @@
               <p class="font-bold">- Giá: 95k (bánh thường), 140k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -404,7 +444,7 @@
               <p class="font-bold">- Giá: 165k (bánh thường), 210k (bánh 3D)</p>
               <div class="text-center">
                 <a
-                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto"
+                  class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
                   href="#!"
                   >Mua ngay</a
                 >
@@ -802,7 +842,6 @@
         </div>
       </section> -->
     </main>
-
     <!--  -->
     <script src="script.js"></script>
   </body>

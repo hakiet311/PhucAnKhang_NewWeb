@@ -22,3 +22,9 @@
     @apply font-bold text-2xl text-center uppercase;
   }
 }
+
+@layer utilities {
+  .hide_popUp {
+    @apply opacity-0 invisible scale-90;
+  }
+}
