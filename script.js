@@ -58,3 +58,20 @@ links.forEach((li) => {
     nav.classList.add("scale-x-0");
   });
 });
+
+//
+const cards = document.querySelectorAll(".card");
+const observerCard = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("annimation_slideup");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+cards.forEach((card) => {
+  observerCard.observe(card);
+});

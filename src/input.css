@@ -12,7 +12,7 @@
 
 @layer base {
   html {
-    font-family: "Merriweather";
+    font-family: "";
   }
 
   .container_p {
@@ -27,5 +27,13 @@
 @layer utilities {
   .hide_popUp {
     @apply opacity-0 invisible scale-90;
+  }
+
+  .card.annimation_slideup {
+    @apply opacity-0 translate-y-24 transition-all;
+  }
+
+  .card {
+    @apply transition-all duration-1000;
   }
 }

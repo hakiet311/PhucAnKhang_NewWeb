@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" href="/IMG/Logo/PakVang.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/output.css" />
@@ -19,7 +19,7 @@
       class="pop_up_container h-screen w-12/12 backdrop-blur-[3px] z-60 fixed top-0 left-0 flex justify-center items-center scale-100 transition-all duration-200 hide_popUp"
     >
       <div
-        class="w-[90%] h-auto bg-white rounded-2xl fixed p-8 flex flex-col gap-3"
+        class="w-[90%] h-auto bg-white shadow-xl shadow-slate-700/10 rounded-2xl fixed p-8 flex flex-col gap-3"
       >
         <h1 class="text-lg uppercase font-bold text-center text-green-900">
           Cảm ơn quý doanh nghiệp đã tin tưởng lựa chọn sản phẩm và dịch vụ tại
@@ -242,14 +242,14 @@
 
       <!-- Shopping -->
       <section class="section section_product container_p py-24" id="product">
-        <h1 class="text_header mb-5">Sản phẩm của chúng tôi</h1>
+        <h1 class="text_header mb-5 text-green-600">Bánh trung thu</h1>
         <!--  -->
         <div
           class="grid grid-cols-12 justify-center items-center gap-6 *:shadow-md *:shadow-slate-700/20 *:hover:-translate-y-1 *:transition-all *:duration-300"
         >
           <!--  -->
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -261,9 +261,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Than tre sữa dừa Nhật Bản
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 95,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 95,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -275,7 +275,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -287,9 +287,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Rose Cake Cheese Fruit
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 115,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 115,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -301,7 +301,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -313,9 +313,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Hồng Cúc Long Nhãn Hạt Sen
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 140,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 140,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -327,7 +327,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -339,9 +339,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Matcha Ngọc Bảo Hạnh Nhân
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 105,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 105,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -353,7 +353,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -365,9 +365,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Gà Quay Thập Vị Sốt Sambal
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 125,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 125,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -379,7 +379,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -391,9 +391,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Nhất Yến Gà Quay Sốt HongKong
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 145,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 145,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -405,7 +405,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -417,9 +417,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Matcha Olong
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 110,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 110,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -431,7 +431,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -443,9 +443,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Gà Quay đông trùng hạ thảo
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 155,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 155,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -457,7 +457,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -469,9 +469,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Đậu Xanh Lục Bảo
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 90,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 90,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -483,7 +483,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -495,9 +495,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Hạt Sen Cốm sữa
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 95,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 95,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -509,7 +509,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -521,9 +521,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Mocha Pudding
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 95,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p class="">- Trọng lượng: 150 gram</p>
+              <p class="">- Giá bán lẻ: 95,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -535,7 +535,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -547,9 +547,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Bào Ngư Sốt Rượu Vang
               </h1>
-              <p class="font-bold">- Trọng lượng: 150 gram</p>
-              <p class="font-bold">- Giá bán lẻ: 165,000 VND</p>
-              <p class="italic font-bold">- Giá đại lý: liên hệ</p>
+              <p>- Trọng lượng: 150 gram</p>
+              <p>- Giá bán lẻ: 165,000 VND</p>
+              <p class="italic">- Giá đại lý: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -562,9 +562,7 @@
         </div>
 
         <section class="section py-12 space-y-6">
-          <h1 class="text_header">
-            BẢNG BÁO GIÁ BÁNH TRUNG THU PHÚC AN KHANG 2025
-          </h1>
+          <h1 class="text_header">BÁO GIÁ BÁNH TRUNG THU PHÚC AN KHANG 2025</h1>
           <p>
             Cám ơn quý khách hàng đã quan tâm đến các sản phẩm của
             <span class="font-bold italic"
@@ -576,10 +574,10 @@
           <p class="font-bold text-lg">+ Đối với cá nhân, khách hàng mua lẻ</p>
           <section class="grid grid-cols-12 gap-3">
             <div class="col-span-full md:col-span-6">
-              <img src="/IMG/MENU/LE1.jpg" alt="" />
+              <img src="/IMG/MENU/LE1.png" alt="" />
             </div>
             <div class="col-span-full md:col-span-6">
-              <img src="/IMG/MENU/LE2.jpg" alt="" />
+              <img src="/IMG/MENU/LE2.png" alt="" />
             </div>
           </section>
 
@@ -665,16 +663,12 @@
 
         <!--  -->
 
-        <h1
-          class="my-12 text_header px-6 py-2 rounded-xl bg-sub shadow-md shadow-slate-600/10 lg:bg-transparent lg:shadow-none"
-        >
-          Sản phẩm Tết
-        </h1>
+        <h1 class="mt-12 text_header px-6 py-2 text-green-800">Sản phẩm Tết</h1>
         <div
           class="grid grid-cols-12 justify-center items-center gap-3 *:shadow-md *:shadow-slate-700/20 *:hover:-translate-y-1 *:transition-all *:duration-300"
         >
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -686,8 +680,8 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Bánh Chưng Đặc Biệt
               </h1>
-              <p class="font-bold">- Trọng lượng: 1kg</p>
-              <p class="font-bold">- Giá: liên hệ</p>
+              <p class="">- Trọng lượng: 1kg</p>
+              <p class="">- Giá: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -699,7 +693,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -709,8 +703,8 @@
             <!--  -->
             <div class="px-3 py-6 flex flex-col gap-2 text-lg">
               <h1 class="text-lg uppercase font-bold text-center">Bánh Dứa</h1>
-              <p class="font-bold">- Trọng lượng: 500g</p>
-              <p class="font-bold">- Giá: liên hệ</p>
+              <p class="">- Trọng lượng: 500g</p>
+              <p class="">- Giá: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -722,7 +716,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-bottom"
@@ -734,8 +728,8 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Bánh Lưỡi Mèo
               </h1>
-              <p class="font-bold">- Trọng lượng: 100g</p>
-              <p class="font-bold">- Giá: liên hệ</p>
+              <p class="">- Trọng lượng: 100g</p>
+              <p class="">- Giá: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -746,14 +740,13 @@
             </div>
           </div>
 
-          <h1
-            class="my-12 text_header px-6 py-2 rounded-xl bg-sub shadow-md shadow-slate-600/10 col-span-full lg:bg-transparent lg:shadow-none"
+          <h2
+            class="text_header col-span-full mt-12 mb-3 rounded-xl text-green-800 sm:shadow-none shadow-none shadow-sm"
           >
-            tea break
-          </h1>
-
+            TEA BREAK
+          </h2>
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[300px] w-[100%] object-cover object-center"
@@ -765,9 +758,9 @@
               <h1 class="text-lg uppercase font-bold text-center">
                 Bánh Tart Trái Cây
               </h1>
-              <p class="font-bold">- Set 6 bánh (6 loại trái cây)</p>
+              <p class="">- Set 6 bánh (6 loại trái cây)</p>
               <p>- Dâu, nho xanh, nho đỏ, xoài, bơ, táo</p>
-              <p class="font-bold">- Giá: liên hệ</p>
+              <p class="">- Giá: liên hệ</p>
               <div class="text-center">
                 <a
                   class="inline-block px-4 py-2 bg-primary text-green-900 rounded-lg font-bold uppercase mx-auto btn_lienhe"
@@ -787,7 +780,7 @@
         <h1 class="text_header mb-6">Dịch vụ thiết kế quà tặng tại PAK</h1>
         <section class="grid grid-cols-12 gap-3">
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -810,7 +803,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -833,7 +826,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -856,7 +849,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -879,7 +872,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -902,7 +895,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -925,7 +918,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -948,7 +941,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['hot'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
@@ -971,7 +964,7 @@
           </div>
 
           <div
-            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['HOT'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6"
+            class="col-span-12 bg-sub h-auto overflow-hidden rounded-xl md:col-span-6 lg:col-span-4 relative before:absolute before:content-['HOT'] before:px-24 before:py-1 before:bg-red-500 before:text-yellow-200 before:font-bold before:text-xl before:uppercase before:animate-pulse before:rotate-45 before:-right-18 before:top-6 card annimation_slideup"
           >
             <img
               class="h-[500px] w-[100%] object-cover object-center"
